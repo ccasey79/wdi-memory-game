@@ -62,6 +62,11 @@ a:hover {
 	font-size: 0;
 }
 
+.animate img {
+	width: 160px;
+	height: 230px;
+}
+
 footer {
 	background-color: #808080;
 }

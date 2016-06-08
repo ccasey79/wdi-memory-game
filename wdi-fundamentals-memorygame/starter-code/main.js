@@ -65,15 +65,41 @@ else (cardOne === cardThree)
 
 
 
+var cards = ['queen', 'queen', 'king', 'king'];
+
+var cardsInPlay = [ ];
 
 
+var createBoard = function() {
+	var board = document.getElementById('game-board');
 
+		for (var i = 0; i < cards.length; i++)  {
+			var newDiv = document.createElement('div');
+			newDiv.className = 'card';
+			board.appendChild(newDiv);
+			cardElement.setAttribute('data-card', cards[i]);
+		}
 
+}
 
+function isTwoCards() {
+	cardsInPlay.push(this.getAttribute('data-card'));
+	cardElement.addEventListener('click', isTwoCards);
 
+		if (cardsInPlay.length === 2)  {
+			
 
+	cardElement.innerHTML = '<img src="king.png" alt="King of Spades" />';
+	cardElement.innerHTML = '<img src="queen.png" alt="Queen of Spades" />';		
 
+			isMatch(cardsInPlay);
+			cardsInPlay = [];
+		}
+}
 
+var isMatch = function() {
+
+}
 
 
 

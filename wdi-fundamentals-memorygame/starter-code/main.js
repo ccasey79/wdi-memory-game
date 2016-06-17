@@ -1,4 +1,6 @@
 
+
+// unit 9
 // 4 cards with variables
 
 var cardOne = "queen";
@@ -63,11 +65,11 @@ else if (cardTwo === cardOne) {  //   two queens
 else (cardOne === cardThree)
 	alert("Sorry, try again!");
 
-
+// unit 10 and 11
 
 var cards = ['queen', 'queen', 'king', 'king'];
 
-var cardsInPlay = [ ];
+var cardsInPlay = [''];
 
 
 var createBoard = function() {
@@ -98,6 +100,12 @@ function isTwoCards() {
 }
 
 var isMatch = function() {
+	if (queen == queen) {
+
+	}
+	else king == king {
+
+	}
 
 }
 
